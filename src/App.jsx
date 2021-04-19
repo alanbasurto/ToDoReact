@@ -11,7 +11,7 @@ const FILTER_MAP = {
 
 const filterkeys = Object.keys(FILTER_MAP)
 
-const initialState = JSON.parse(localStorage.getItem("todos")) || "[]";
+const initialState = JSON.parse(localStorage.getItem("todos")) || [];
 const filterInitialState = localStorage.getItem("filter") || "All";
 
 const App = () => {
